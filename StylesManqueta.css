@@ -1,0 +1,33 @@
+button{
+    font-size: 6rem;
+    background-color: pink;
+    
+   
+}
+
+#Botonera{
+    size: 100px;
+    align-items: center;
+    
+    
+}
+#toprow{
+    
+    text-align: center;
+    padding-left: 3px;
+}
+/* Si el boton todavia no se toco, el valor está, pero la imagen esta hidden*/
+.hidden{
+background-color: grey;
+}
+
+.visible{
+
+}
+.aprove{
+
+}
+
+.decline{
+
+}
