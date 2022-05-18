@@ -56,19 +56,19 @@ const r5_1Wins =  false;
 const r5_2Wins =  false;
 const r5_3Wins =  false;
 }
-
-
+fila1.classList.add("notVisible");
+fila2.classList.add("notVisible");
+fila3.classList.add("notVisible");
+fila4.classList.add("notVisible");
+fila5.classList.add("notVisible");
 
  iniciarApp();
  
 function iniciarApp(){
     Start = false; 
-    //alert("Presiona start para iniciar TimbTowel");
+    alert("Presiona start para iniciar TimbTowel");
 //aca deberia bloquear todos los botones menos la primera fila
-fila2.classList.add("notVisible");
-fila3.classList.add("notVisible");
-fila4.classList.add("notVisible");
-fila5.classList.add("notVisible");
+
 
 
     
@@ -115,7 +115,7 @@ function randomGen1(){
      const WinnerRowA = Math.max(...RowA3Numbers);
 
      WinnerRound1 = WinnerRowA;
-
+     fila1.classList.remove("notVisible");
     }
 };
 
@@ -123,6 +123,7 @@ function randomGen1Visible(){
     //fila1.classList.remove("notVisible");
 
 };
+
 function randomGen2(){
         
             
@@ -216,7 +217,7 @@ function randomGen5(){
                     
 };
 
-function randomGen4Visible(){
+function randomGen5Visible(){
     fila5.classList.remove("notVisible");
 };
 
@@ -359,7 +360,7 @@ function resetAll(){
     //arranca aca el cuarto nivel
     Runlvl4();
 
-         function Runlvl4(){
+    function Runlvl4(){
         //espero el click en el cuarto nivel
            r4_1.addEventListener("click",EligionR4_1);
            r4_2.addEventListener("click",EligionR4_2);
@@ -400,7 +401,7 @@ function resetAll(){
        //aca empieza el 5/ultimo nivel :D
     Runlvl5();
 
-            function Runlvl5(){
+    function Runlvl5(){
               //espero el click en el ultimo nivel
                  r5_1.addEventListener("click",EligionR5_1);
                  r5_2.addEventListener("click",EligionR5_2);
@@ -433,7 +434,7 @@ function resetAll(){
                         Loss();
                    }
                 }
-            };
+    };
 
     function FinalWinWin(){
            alert("¡GANASTE XD!");
