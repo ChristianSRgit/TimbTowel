@@ -2,7 +2,12 @@ button{
     font-size: 6rem;
     background-color: pink;
     
+    
    
+}
+
+.rojo{
+    background-color: red;
 }
 
 #Botonera{
@@ -25,9 +30,21 @@ background-color: grey;
 
 }
 .aprove{
-
+background-color: green;
 }
 
 .decline{
 
+}
+.pickeable{
+    cursor: pointer;
+}
+.notVisible{
+    
+    display:none;
+    
+}
+.disabled{
+    border-color: red;
+    display: block;
 }
