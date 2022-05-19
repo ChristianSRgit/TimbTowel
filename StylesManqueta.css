@@ -1,9 +1,14 @@
 button{
     font-size: 6rem;
     background-color: pink;
+}
+
+.blank{
     
-    
-   
+    background-color: white;
+    border:none ;
+    width: 200px
+       
 }
 
 .rojo{
@@ -11,8 +16,9 @@ button{
 }
 
 #Botonera{
-    size: 100px;
-    align-items: center;
+    
+    
+    background-color: aquamarine;
     
     
 }
@@ -27,7 +33,7 @@ background-color: grey;
 }
 
 .visible{
-
+    display:flex
 }
 .aprove{
 background-color: green;

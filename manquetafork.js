@@ -10,6 +10,9 @@ const fila3 = document.querySelector("#fila3");
 const fila4 = document.querySelector("#fila4");
 const fila5 = document.querySelector("#fila5");
 
+
+
+
 //botones
 let r1_1 = document.querySelector("#r1_1");
 let r1_2 = document.querySelector("#r1_2");
@@ -31,8 +34,17 @@ let r5_1 = document.querySelector("#r5_1");
 let r5_2 = document.querySelector("#r5_2");
 let r5_3 = document.querySelector("#r5_3");
 
-//estaria bueno hacer una matriz fija para que aunque aparezcan/desaparezcan las filas no modifique
-//la altura ya que queda horrendo
+//botones para dar estructuras x mientras
+const vacio1 = document.querySelector("#vacio1");
+const vacio2 = document.querySelector("#vacio2");
+const vacio3 = document.querySelector("#vacio3");
+const vacio4 = document.querySelector("#vacio4");
+const vacio5 = document.querySelector("#vacio5");
+
+
+
+//estaria bueno hacer una matriz fija  con grid para que aunque aparezcan/desaparezcan las filas no modifique la altura ya que queda horrendo
+
 
 //ganadores de cada nivel
 function DeclareWiners(){
@@ -56,25 +68,35 @@ const r5_1Wins =  false;
 const r5_2Wins =  false;
 const r5_3Wins =  false;
 }
+//inician todas las filas sin ser visibles
 fila1.classList.add("notVisible");
 fila2.classList.add("notVisible");
 fila3.classList.add("notVisible");
 fila4.classList.add("notVisible");
 fila5.classList.add("notVisible");
 
+
+
+//aca deberia empezar  
  iniciarApp();
  
 function iniciarApp(){
     Start = false; 
     alert("Presiona start para iniciar TimbTowel");
-//aca deberia bloquear todos los botones menos la primera fila
+     fila1.classList.add("notVisible");
+     fila2.classList.add("notVisible");
+     fila3.classList.add("notVisible");
+     fila4.classList.add("notVisible");
+     fila5.classList.add("notVisible");
+
+     vacio1.classList.remove("notVisible");
+     vacio2.classList.remove("notVisible");
+     vacio3.classList.remove("notVisible");
+     vacio4.classList.remove("notVisible");
+     vacio5.classList.remove("notVisible");
 
 
 
-    
-    
-    
-    
 };
  
 /* alt+shift+a  para comentar seleccion*/
@@ -82,6 +104,7 @@ function iniciarApp(){
 function Loss(){
     alert("Loss");
     allrowsNotVisible();
+    iniciarApp();
 
 }
 
@@ -115,12 +138,18 @@ function randomGen1(){
      const WinnerRowA = Math.max(...RowA3Numbers);
 
      WinnerRound1 = WinnerRowA;
-     fila1.classList.remove("notVisible");
+     fila1.classList.remove("notVisible");//botones no visibles para estructura
+     vacio1.classList.add("notVisible");
+     
+     
     }
 };
 
 function randomGen1Visible(){
-    //fila1.classList.remove("notVisible");
+    //fila1.classList.remove("notVisible");let blank1 = document.querySelector(#vacio1);
+    
+
+
 
 };
 
@@ -142,11 +171,14 @@ function randomGen2(){
          const WinnerRowB = Math.max(...RowB3Numbers);
     
          WinnerRound2 = WinnerRowB;
+
+         
         
 };
 
 function randomGen2Visible(){
     fila2.classList.remove("notVisible");
+    vacio2.classList.add("notVisible");
 };
 
 function randomGen3(){
@@ -166,11 +198,15 @@ function randomGen3(){
              const WinnerRowC = Math.max(...RowC3Numbers);
         
              WinnerRound3 = WinnerRowC;
+
+             
+             
             
 };
 
 function randomGen3Visible(){
     fila3.classList.remove("notVisible");
+    vacio3.classList.add("notVisible");
 };
 
 function randomGen4(){
@@ -191,10 +227,14 @@ function randomGen4(){
             
                  WinnerRound4 = WinnerRowD;
                 
+                 
+             
+                
 };
 
 function randomGen4Visible(){
     fila4.classList.remove("notVisible");
+    vacio4.classList.add("notVisible");
 };
 
 function randomGen5(){
@@ -214,11 +254,14 @@ function randomGen5(){
                      const WinnerRowE = Math.max(...RowE3Numbers);
                 
                      WinnerRound5 = WinnerRowE;
+                     
+                     
                     
 };
 
 function randomGen5Visible(){
     fila5.classList.remove("notVisible");
+    vacio5.classList.add("notVisible");
 };
 
 function allrowsNotVisible(){
@@ -412,6 +455,8 @@ function resetAll(){
                      if(r5_1 >= WinnerRound5){
                         r5_1Wins = true;
                         FinalWinWin();       
+                        allrowsNotVisible();
+                        iniciarApp();
                    } else{
                         Loss();
                    }
@@ -421,6 +466,8 @@ function resetAll(){
                      if(r5_2 >= WinnerRound5){
                         r5_2Wins = true;
                         FinalWinWin();
+                        allrowsNotVisible();
+                        iniciarApp();
                    } else{
                         Loss();
                    }
@@ -430,6 +477,8 @@ function resetAll(){
                      if(r5_3 >= WinnerRound5){
                         r5_3Wins = true;
                         FinalWinWin();
+                        allrowsNotVisible();
+                        iniciarApp();
                    } else{
                         Loss();
                    }
@@ -437,7 +486,7 @@ function resetAll(){
     };
 
     function FinalWinWin(){
-           alert("¡GANASTE XD!");
+           alert("¡GANASTE!");
     };
    
 
