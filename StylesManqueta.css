@@ -1,31 +1,77 @@
-button{
-    font-size: 6rem;
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+}
+.rowGrid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+#header{
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    text-align: left;
+    color: aqua;
+}
+#footerTowel{
     background-color: pink;
+    height: auto;
+
+}
+#footerTowel >div{
+    font-size: 1rem;
+    text-align: center;
+    
+}
+#footContent{
+    background-color: gray;
+    height: 20%;
+}
+#FooterCopyRight{
+    background-color: black;
+    
+}
+button{
+    font-size: 4rem;
+    background-color: pink;
+    width: 100%;
+}
+button:hover{
+    background-color: #e4b5c0;
+}
+#timbTowel{
+    justify-content: center;
+    align-content: center;
+}
+.sideTowel{
+    border: 1px solid red;
 }
 
+ul li{
+    list-style-type: none;
+}
 .blank{
-    
     background-color: white;
     border:none ;
-    width: 200px
-       
+    width: auto;
+    text-align: center;
+    justify-content: center;
 }
+
 
 .rojo{
     background-color: red;
 }
 
 #Botonera{
-    
-    
     background-color: aquamarine;
-    
-    
 }
+
 #toprow{
-    
     text-align: center;
-    padding-left: 3px;
+    justify-content: center;
 }
 /* Si el boton todavia no se toco, el valor está, pero la imagen esta hidden*/
 .hidden{
@@ -35,21 +81,19 @@ background-color: grey;
 .visible{
     display:flex
 }
+
+.notVisible{
+    display:none;
+}
+
 .aprove{
 background-color: green;
 }
 
-.decline{
-
-}
 .pickeable{
     cursor: pointer;
 }
-.notVisible{
-    
-    display:none;
-    
-}
+
 .disabled{
     border-color: red;
     display: block;
