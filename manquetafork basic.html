@@ -21,23 +21,37 @@
 
     <div id="grid">
         <div class="sideTowel"> 
-            <ul id="reglas">
-                <li>reglaX</li>
-                <li>reglaX</li>
-                <li>reglaX</li>
-                <li>reglaX</li>
-                <li>reglaX</li>
-            </ul>
+            <table id="rules">
+                <thead>
+                    <tr>
+                        <th colspan="3">How to play/steps/rules</th>
+                    </tr> 
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Step N</td>
+                    </tr>
+                    <tr>
+                        <td>Step N</td>
+                    </tr>
+                    <tr>
+                        <td>Step N</td>
+        
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div id="timbTowel">
+
+        <div id="timbTowel" class="columnGridTowel">
             
-            <button id="toprow" class="">$$$$</button>
+            <div id="topRow" class="numerosTowel">$$$$</div>
 
             <div>
                 <button id="vacio5" class="blank"> </button>
             </div>
 
-            <div id="fila5" class="rowGrid">
+            <div id="fila5" class="innerRowGridTowel">
                 <button id="r5_1" class="row5" class="valueAllx3Buttons">5</button>
                 <button id="r5_2" class="row5" class="valueAllx3Buttons">5</button>
                 <button id="r5_3" class="row5" class="valueAllx3Buttons">5</button>
@@ -47,7 +61,7 @@
                 <button id="vacio4" class="blank"> </button>
             </div>
 
-            <div id="fila4" class="rowGrid">
+            <div id="fila4" class="innerRowGridTowel">
                 <button id="r4_1" class="row4" class="valueAllx3Buttons">4</button>
                 <button id="r4_2" class="row4" class="valueAllx3Buttons">4</button>
                 <button id="r4_3" class="row4" class="valueAllx3Buttons">4</button>
@@ -57,7 +71,7 @@
                 <button id="vacio3" class="blank"> </button>
             </div>
 
-            <div id="fila3" class="rowGrid">
+            <div id="fila3" class="innerRowGridTowel">
                 <button id="r3_1" class="row3" class="valueAllx3Buttons">3</button>
                 <button id="r3_2" class="row3" class="valueAllx3Buttons">3</button>
                 <button id="r3_3" class="row3" class="valueAllx3Buttons">3</button>
@@ -67,7 +81,7 @@
                 <button id="vacio2" class="blank"> </button>
             </div>
 
-            <div id="fila2" class="rowGrid">
+            <div id="fila2" class="innerRowGridTowel">
                 <button id="r2_1" class="row2" class="valueAllx3Buttons">2</button>
                 <button id="r2_2" class="row2" class="valueAllx3Buttons">2</button>
                 <button id="r2_3" class="row2" class="valueAllx3Buttons">2</button>
@@ -77,23 +91,57 @@
                 <button id="vacio1" class="blank"> </button>
             </div>
 
-            <div id="fila1" class="rowGrid">
+            <div id="fila1" class="innerRowGridTowel">
                 <button id="r1_1" class="row1" class="valueAllx3Buttons">1</button>
                 <button id="r1_2" class="row1" class="valueAllx3Buttons">1</button>
                 <button id="r1_3" class="row1" class="valueAllx3Buttons">1</button>
             </div>
             
             
-            <div id="footerTowel">
+            <div id="footerTowel" class="divTowel">
                 <button id="Start" class="randomGen">Start</button>
-                <div id="numerosFooter">$1000
-                </div>
+                <div class="numerosTowel">$1000</div>
             </div>
         </div>
-        <div class="sideTowel"></div>
-    </div>
-    <div id="footContent"></div>
-    <div id="FooterCopyRight"></div>
+        <div  id="lastWinners" class="sideTowel">
+            
+            <table id="LastWinners">
+                <thead>
+                    <tr>
+                        <th colspan="3">Last Winners</th>
+                    </tr> 
+                    <tr>   
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Country</th>
+                        </tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>$10</td>
+                        <td>España</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>$10</td>
+                        <td>España</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>$10</td>
+                        <td>España</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>  <!--aca termina el grid-->
+   
+    <div id="footContent">asd</div>
+    <div id="FooterCopyRight">TimbTowel it's an interactive proyect for integral testing and responsive Web design by Christian S. Ramundo</div>
     
     <script src="/manquetafork2.0.js"></script>
 </body>

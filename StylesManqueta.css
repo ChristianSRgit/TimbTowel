@@ -1,13 +1,17 @@
+html{
+    background-color: white;
+}
 #grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     
 }
-.rowGrid{
+.innerRowGridTowel{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr; 
 }
+
 #header{
     height: 10%;
     width: 100%;
@@ -15,12 +19,9 @@
     text-align: left;
     color: aqua;
 }
-#footerTowel{
-    background-color: pink;
-    height: auto;
 
-}
-#footerTowel >div{
+
+#footerTowel >div,{
     font-size: 1rem;
     text-align: center;
     
@@ -31,12 +32,16 @@
 }
 #FooterCopyRight{
     background-color: black;
-    
+    color: bisque;
+    text-align: center;
 }
-button{
+button,.numerosTowel{
     font-size: 4rem;
     background-color: pink;
     width: 100%;
+}
+.numerosTowel{
+    text-align: center;
 }
 button:hover{
     background-color: #e4b5c0;
@@ -47,6 +52,23 @@ button:hover{
 }
 .sideTowel{
     border: 1px solid red;
+}
+.divTowel{
+    background-color: pink;
+}
+ table,tr,thead,td{
+    
+    border: 2px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    
+ }
+
+ 
+table thead tr th{
+    background-color:gray;
+    text-align: center;
+    
 }
 
 ul li{
@@ -69,9 +91,10 @@ ul li{
     background-color: aquamarine;
 }
 
-#toprow{
+#topRow{
     text-align: center;
     justify-content: center;
+    background-color: pink;
 }
 /* Si el boton todavia no se toco, el valor está, pero la imagen esta hidden*/
 .hidden{
@@ -83,7 +106,7 @@ background-color: grey;
 }
 
 .notVisible{
-    display:none;
+    display: none;
 }
 
 .aprove{
