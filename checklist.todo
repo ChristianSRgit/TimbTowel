@@ -1,0 +1,29 @@
+HTML
+☐ add rules/how to play
+☐ dropdown menu
+
+CSS 
+☐ grid towel
+☐ header styles with logo
+☐ Add media queries> menu(Full screen)towel(main) ↓ rules/how to play ↓ scores ↓ FAQ 
+☐ check background colors
+☐ dropdown menu function
+☐ add css background color win/loss LastRound (win a round, last row played show the winner/loser boxes with colors)
+
+JS
+☐ change alerts for css + html pop-ups to the front
+☐ Add system points
+☐ Local Storage
+☐ cost per play (every play hace a cost)
+☐ pool function(every loss it's add the cost to play to the pool)
+
+
+MEDIA
+☐ add sounds to the win/loss function
+
+
+DB
+☐ add database for users who played and win mongoDB/SQL
+
+
+
