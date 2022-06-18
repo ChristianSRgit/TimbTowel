@@ -10,7 +10,9 @@ CSS
 ☐ add animations for each row  when visible
 ✔ Add media queries if(480px<=) menu(Full screen) header ↓ towel(main) ↓ rules/how to play ↓ scores ↓ FAQ ↓ footer @done (17/6/2022 17:07:22)
 ☐ check background colors
-☐ dropdown menu function
+✔ dropdown menu function @done (18/6/2022 03:21:52)
+☐ center dropdown three lines and nav(when its triggered breaks the layout)
+☐ add dropdown mediaqueries
 ☐ add css background color win/loss LastRound (win a round, last row played show the winner/loser boxes with colors)
 ☐ disable previous rows(triggers loss function)
 

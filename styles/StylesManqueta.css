@@ -1,6 +1,12 @@
 html{
     background-color: white;
 }
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
 #logo img{
     
     max-width: 100px;
@@ -10,7 +16,6 @@ html{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    
 }
 .innerRowGridTowel{
     display: grid;
@@ -31,15 +36,28 @@ html{
 }
 #menuHeader{
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
     align-items: center;
     background-color: black;
     text-align: center;
     font-size: 2rem;
     color: #fff;
 }
-#menuHeader div{
-    
+.dropdownActivo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column-reverse;
+    background-color: #000;
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    width: 100%;
+    height: auto;
+}
+.dropdownInactivo{
+    display: none;
+
 }
 #titleHeader{
     background-color: black;
@@ -47,10 +65,9 @@ html{
     text-align: center;
     font-size: 2rem;
     padding-top: 30px;
-    max-height: fit-content;
+    max-height: 50px;
     
 }
-
 
 #footContent{
     background-color: gray;
@@ -68,6 +85,7 @@ button,.numerosTowel{
     background-color: pink;
     width: 100%;
     border: none;
+    border-spacing: 0;
 }
 .numerosTowel{
     text-align: center;
@@ -76,6 +94,14 @@ button:hover{
     background-color: #e4b5c0;
 }
 #menuHeader>div,div > svg{
+    cursor:pointer;
+    align-items: center;
+    
+}
+.menuButton{
+    cursor:pointer;
+}
+#dropdown{
     cursor:pointer;
 }
 #timbTowel{
@@ -89,22 +115,21 @@ button:hover{
     background-color: pink;
 }
  table,tr,thead,td{
-    
-    border: 2px solid black;
+    border: 1px solid black;
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-    
+    border-spacing: 0;
  }
 
- 
 table thead tr th{
     background-color:gray;
     text-align: center;
     padding: 5px 5px;
+    border-collapse: collapse;
 }
 table th{
-    border: 2px solid black;
+    border-collapse: collapse;
     margin: auto;
     padding: 5px 5px;
 }
@@ -120,7 +145,6 @@ ul li{
     justify-content: center;
 }
 
-
 .rojo{
     background-color: red;
 }
@@ -135,6 +159,9 @@ ul li{
     background-color: pink;
     margin: 0px;
     padding: 0px;
+    border: 1px solid black;
+    border-spacing: 0;
+    
 }
 /* Si el boton todavia no se toco, el valor está, pero la imagen esta hidden*/
 .hidden{
