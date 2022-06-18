@@ -1,0 +1,35 @@
+@media screen and (max-width:480px) {
+    body{
+        background-color: lightblue;
+    }
+    #header{
+        display: grid;
+        grid-template-columns: auto 15%;
+    }
+    #header div div{
+        display: none;
+    }
+    #header div:nth-child(1){
+        display:none ;
+    }
+    
+    #grid{
+        display: flex;
+        flex-direction: column;
+    }
+    #grid>div:nth-child(1){
+        order:2 ;
+    }
+    #grid>div:nth-child(2){
+        order: 1;
+    }
+    #grid>div:nth-child(3){
+        order: 3;
+    }
+
+    /*Animations*/
+    #fila1{
+      background-color: blue;
+    }
+    
+}
