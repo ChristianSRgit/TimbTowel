@@ -1,10 +1,15 @@
 html{
     background-color: white;
 }
+#logo img{
+    
+    max-width: 100px;
+    max-height: auto;
+}
 #grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     
 }
 .innerRowGridTowel{
@@ -15,17 +20,38 @@ html{
 #header{
     height: 10%;
     width: 100%;
-    background-color: black;
-    text-align: left;
-    color: aqua;
-}
-
-
-#footerTowel >div,{
-    font-size: 1rem;
+    background-color: #000;
     text-align: center;
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+}
+#logo{
+    text-align: center;
+    color: #fff;
+}
+#menuHeader{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+#menuHeader div{
     
 }
+#titleHeader{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 30px;
+    max-height: fit-content;
+    
+}
+
+
 #footContent{
     background-color: gray;
     height: 20%;
@@ -33,12 +59,15 @@ html{
 #FooterCopyRight{
     background-color: black;
     color: bisque;
-    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
 }
 button,.numerosTowel{
     font-size: 4rem;
     background-color: pink;
     width: 100%;
+    border: none;
 }
 .numerosTowel{
     text-align: center;
@@ -46,12 +75,15 @@ button,.numerosTowel{
 button:hover{
     background-color: #e4b5c0;
 }
+#menuHeader>div,div > svg{
+    cursor:pointer;
+}
 #timbTowel{
     justify-content: center;
     align-content: center;
 }
 .sideTowel{
-    border: 1px solid red;
+    
 }
 .divTowel{
     background-color: pink;
@@ -61,6 +93,7 @@ button:hover{
     border: 2px solid black;
     width: 100%;
     border-collapse: collapse;
+    text-align: center;
     
  }
 
@@ -68,7 +101,12 @@ button:hover{
 table thead tr th{
     background-color:gray;
     text-align: center;
-    
+    padding: 5px 5px;
+}
+table th{
+    border: 2px solid black;
+    margin: auto;
+    padding: 5px 5px;
 }
 
 ul li{
@@ -95,6 +133,8 @@ ul li{
     text-align: center;
     justify-content: center;
     background-color: pink;
+    margin: 0px;
+    padding: 0px;
 }
 /* Si el boton todavia no se toco, el valor está, pero la imagen esta hidden*/
 .hidden{
@@ -106,7 +146,8 @@ background-color: grey;
 }
 
 .notVisible{
-    display: none;
+    
+visibility: hidden;
 }
 
 .aprove{
@@ -121,3 +162,4 @@ background-color: green;
     border-color: red;
     display: block;
 }
+

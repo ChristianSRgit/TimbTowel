@@ -9,8 +9,20 @@
     #header div div{
         display: none;
     }
-    #header div:nth-child(1){
+    
+    #header div:nth-child(1){  /*" hide MENU word"*/
         display:none ;
+    }
+    #menuHeader > svg { 
+        height: 100%;
+        width: 100%;
+        padding-left: 15%;
+    }
+    #titleHeader{
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding-top: 10px;
     }
     
     #grid{
@@ -26,7 +38,14 @@
     #grid>div:nth-child(3){
         order: 3;
     }
-
+    #FooterCopyRight{
+        background-color: black;
+        color: bisque;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 6%;
+    }
     /*Animations*/
     #fila1{
       background-color: blue;

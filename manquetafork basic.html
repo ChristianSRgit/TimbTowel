@@ -7,21 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manqueta N°1</title>
-    <link rel="stylesheet" href="/StylesManqueta.css">
+    <link rel="stylesheet" href="/styles/StylesManqueta.css">
+    <link rel="stylesheet" href="/styles/mediaQueries.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
     <style>
-        html,
-        body {
+        html,body {
             height: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
 
 <body>
-    <div id="header">LO-GOD</div>
+    <div id="header">
+        <div id="logo">logo xd
+            <!-- <img src="/media/towerpng.png" alt="torrecita"> -->
+        </div>
+        <div id="titleHeader">TimbTower</div>
+        <div id="menuHeader">
+            <div>Menu
+                <a href="#"></a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"> 
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+              
+        </div>
+    </div>
 
     <div id="grid">
-        <div class="sideTowel"> 
-            <table id="rules">
+        <div id="divRules" class="sideTowel" > 
+            <table>
                 <thead>
                     <tr>
                         <th colspan="3">How to play/steps/rules</th>
@@ -42,56 +61,41 @@
                 </tbody>
             </table>
         </div>
-
         <div id="timbTowel" class="columnGridTowel">
             
             <div id="topRow" class="numerosTowel">$$$$</div>
 
-            <div>
-                <button id="vacio5" class="blank"> </button>
-            </div>
-
-            <div id="fila5" class="innerRowGridTowel">
+            <div id="fila5" class="innerRowGridTowel" class="animation01">
                 <button id="r5_1" class="row5" class="valueAllx3Buttons">5</button>
                 <button id="r5_2" class="row5" class="valueAllx3Buttons">5</button>
                 <button id="r5_3" class="row5" class="valueAllx3Buttons">5</button>
             </div>
 
-            <div>
-                <button id="vacio4" class="blank"> </button>
-            </div>
+            
 
-            <div id="fila4" class="innerRowGridTowel">
+            <div id="fila4" class="innerRowGridTowel" class="animation01"">
                 <button id="r4_1" class="row4" class="valueAllx3Buttons">4</button>
                 <button id="r4_2" class="row4" class="valueAllx3Buttons">4</button>
                 <button id="r4_3" class="row4" class="valueAllx3Buttons">4</button>
             </div>
 
-            <div>
-                <button id="vacio3" class="blank"> </button>
-            </div>
+            
 
-            <div id="fila3" class="innerRowGridTowel">
+            <div id="fila3" class="innerRowGridTowel" class="animation01">
                 <button id="r3_1" class="row3" class="valueAllx3Buttons">3</button>
                 <button id="r3_2" class="row3" class="valueAllx3Buttons">3</button>
                 <button id="r3_3" class="row3" class="valueAllx3Buttons">3</button>
             </div>
 
-            <div>
-                <button id="vacio2" class="blank"> </button>
-            </div>
+            
 
-            <div id="fila2" class="innerRowGridTowel">
+            <div id="fila2" class="innerRowGridTowel" class="animation01">
                 <button id="r2_1" class="row2" class="valueAllx3Buttons">2</button>
                 <button id="r2_2" class="row2" class="valueAllx3Buttons">2</button>
                 <button id="r2_3" class="row2" class="valueAllx3Buttons">2</button>
             </div>
 
-            <div class="blank">
-                <button id="vacio1" class="blank"> </button>
-            </div>
-
-            <div id="fila1" class="innerRowGridTowel">
+            <div id="fila1" class="innerRowGridTowel" class="animation01">
                 <button id="r1_1" class="row1" class="valueAllx3Buttons">1</button>
                 <button id="r1_2" class="row1" class="valueAllx3Buttons">1</button>
                 <button id="r1_3" class="row1" class="valueAllx3Buttons">1</button>
@@ -105,7 +109,7 @@
         </div>
         <div  id="lastWinners" class="sideTowel">
             
-            <table id="LastWinners">
+            <table>
                 <thead>
                     <tr>
                         <th colspan="3">Last Winners</th>
@@ -141,9 +145,9 @@
     </div>  <!--aca termina el grid-->
    
     <div id="footContent">asd</div>
-    <div id="FooterCopyRight">TimbTowel it's an interactive proyect for integral testing and responsive Web design by Christian S. Ramundo</div>
+    <div id="FooterCopyRight"> <br>TimbTowel it's an interactive proyect for integral testing and responsive Web design by Christian S. Ramundo ©<br><br><br></div>
     
-    <script src="/manquetafork2.0.js"></script>
+    <script src="/JS logic/manquetafork2.0.js"></script>
 </body>
 
 </html>

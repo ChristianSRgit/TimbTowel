@@ -1,15 +1,18 @@
 HTML
 ☐ add rules/how to play
 ☐ dropdown menu
-a
+✔ delete blank buttons and divs @done (17/6/2022 15:59:24)d
 
-CSS 
-☐ grid towel
+CSS
+✔ modify .notVisible to proper visibility property @done (17/6/2022 15:59:28)
+✔ grid towel @done (17/6/2022 15:59:29
 ☐ header styles with logo
-☐ Add media queries> menu(Full screen)towel(main) ↓ rules/how to play ↓ scores ↓ FAQ 
+☐ add animations for each row  when visible
+✔ Add media queries if(480px<=) menu(Full screen) header ↓ towel(main) ↓ rules/how to play ↓ scores ↓ FAQ ↓ footer @done (17/6/2022 17:07:22)
 ☐ check background colors
 ☐ dropdown menu function
 ☐ add css background color win/loss LastRound (win a round, last row played show the winner/loser boxes with colors)
+☐ disable previous rows(triggers loss function)
 
 JS
 ☐ change alerts for css + html pop-ups to the front
