@@ -1,35 +1,52 @@
 HTML
 ☐ add rules/how to play
-☐ dropdown menu
-✔ delete blank buttons and divs @done (17/6/2022 15:59:24)d
+✔ dropdown menu @done (19/6/2022 18:00:38)
+✔ delete blank buttons and divs @done (17/6/2022 15:59:24)
+☐ conect wallet round btn
+☐ contact-footer
+
 
 CSS
 ✔ modify .notVisible to proper visibility property @done (17/6/2022 15:59:28)
 ✔ grid towel @done (17/6/2022 15:59:29
-☐ header styles with logo
+☐ header styles with logo,check size and media queries
 ☐ add animations for each row  when visible
-✔ Add media queries if(480px<=) menu(Full screen) header ↓ towel(main) ↓ rules/how to play ↓ scores ↓ FAQ ↓ footer @done (17/6/2022 17:07:22)
+☐ add animations to dropwdown menu
 ☐ check background colors
-✔ dropdown menu function @done (18/6/2022 03:21:52)
 ☐ center dropdown three lines and nav(when its triggered breaks the layout)
-☐ add dropdown mediaqueries
 ☐ add css background color win/loss LastRound (win a round, last row played show the winner/loser boxes with colors)
-☐ disable previous rows(triggers loss function)
+☐ Dark/white theme
+
+
+
+MEDIA QUERIES @high 
+✔ Add media queries if(480px<=) menu(Full screen) header ↓ towel(main) ↓ rules/how to play ↓ scores ↓ FAQ ↓ footer @done (17/6/2022 17:07:22)
+☐ add dropdown mediaqueries
+☐ logo to the left,BLANK,settings,conect wallet
+☐ 
+
 
 JS
-☐ change alerts for css + html pop-ups to the front
+✔ dropdown menu function @done (18/6/2022 03:21:52)
+☐ change alerts for css + html pop-ups to the front(bootstrap alerts)
+☐ disable previous rows(triggers loss function)
+☐ add color win/loss LastRound
 ☐ Add system points
 ☐ Local Storage
 ☐ cost per play (every play hace a cost)
 ☐ pool function(every loss it's add the cost to play to the pool)
-
+☐ MailJS and tokens
 
 MEDIA
 ☐ add sounds to the win/loss function
 
 
 DB
-☐ add database for users who played and win mongoDB/SQL
+☐ add database for users
+☐ winners table
+
+
+
 
 
 

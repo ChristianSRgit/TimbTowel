@@ -3,8 +3,8 @@
         background-color: lightblue;
     }
     #header{
-        display: grid;
-        grid-template-columns: auto 15%;
+        display: flex;
+        width: 100%;
     }
     #header div div{
         display: none;
@@ -18,11 +18,15 @@
         width: 100%;
         padding-left: 15%;
     }
+    #menuHeader{
+        display: none;
+    }
     #titleHeader{
         background-color: black;
         color: #fff;
         text-align: center;
         padding-top: 10px;
+        width: 100%;
     }
     
     #grid{
