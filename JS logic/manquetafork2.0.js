@@ -1,3 +1,4 @@
+import {testing} from "./poolStashFunction";
 
 // selecciono los botones con queryselectors, algunos por clase otros por id
 let Start = document.querySelector(".randomGen");

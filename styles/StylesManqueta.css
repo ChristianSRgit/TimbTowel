@@ -1,5 +1,5 @@
 html{
-    background-color: white;
+    background-color: rgb(109, 179, 109);
 }
 * {
     margin: 0;
@@ -10,12 +10,11 @@ html{
 #logo img{
     max-width: auto;
     max-height: 60px;
+    margin-left: -4px;
+    padding-top: 2%;
 }
 
-div>#logo{
-    align-items: center;
-    text-align: center;
-}
+
 #grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -34,12 +33,10 @@ div>#logo{
     text-align: center;
     display: grid;
     clear: both;
-    grid-template-columns: 10% auto 10%;
+    grid-template-columns: 10% 80% 10%;
 
 }
 #logo{
-    display: flex;
-    align-items: flex-start;
     align-items: center;
     text-align: center;
     font-size: 1rem;
@@ -53,18 +50,13 @@ div>#logo{
     align-items: center;
     background-color: black;
     text-align: center;
-    font-size: 2rem;
     color: #fff;
     height: max-content;
 }
 .dropdownActivo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column-reverse;
     background-color: #000;
-    position: relative;
+    position:sticky;
     color: #fff;
-    font-size: 2rem;
     width: 100%;
     height: auto;
 }
@@ -76,8 +68,9 @@ div>#logo{
     background-color: black;
     color: #fff;
     text-align: center;
-    font-size: 2rem;
-    max-height: 50px;
+    font-size: 2em;
+    max-height: 10%;
+    padding-top: 15px;
     
 }
 
@@ -92,28 +85,53 @@ div>#logo{
     align-items: stretch;
     justify-content: center;
 }
-button,.numerosTowel{
+button{
     font-size: 4rem;
-    background-color: pink;
+    background-color: #ccc;
     width: 100%;
-    border: none;
+    border: 1px double black;
     border-spacing: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px ;
+}
+/* #fila5>button{
+    background-color: red;  SELECTOR lastrow color
+} */
+#fila5>button{
+    box-shadow: 0 0 3px;
 }
 .numerosTowel{
     text-align: center;
+    font-size: 4rem;
+    background-color: #ccc;
+    width: 100%;
+    border: none;
+    border-spacing: 0;
+    border: 1px double black;
+    border-radius: 5%;
 }
 button:hover{
-    background-color: #e4b5c0;
+    background-color: rgb(153, 150, 150);
+    
+    
 }
 #menuHeader>div,div > svg{
     cursor:pointer;
     align-items: center;
+    padding-top: 6px;
 }
 .menuButton{
     cursor:pointer;
 }
 #dropdown{
     cursor:pointer;
+    height: 100px;
+    align-items: center;
+    padding-top:10px;
+    border-radius: 2%;
+}
+#dropdown>ul>li{
+padding-top: 5px;
 }
 #timbTowel{
     justify-content: center;
@@ -123,20 +141,18 @@ button:hover{
     
 }
 .divTowel{
-    background-color: pink;
+    background-color: none;
 }
 tr,td{
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid red;
+    border: 1px solid #ccc;
     text-align: center;
-    border-spacing: 0;
  }
 
 #lastWinnersTable{
     padding: 1% 0%;
     background-color: gray;
-    
     border:0;
 }
 
@@ -164,11 +180,19 @@ ul li{
     clear: both;
     text-align: center;
     justify-content: center;
-    background-color: pink;
+    width: 100%;
+    background-color: #ccc;
     margin: 0px;
     padding: 0px;
     border-spacing: 0;
+    border: 1px double black;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
     
+}
+#personalPool{
+    border-radius: 5px;
+    width: 100%;
 }
 /* Si el boton todavia no se toco, el valor está, pero la imagen esta hidden*/
 .hidden{
