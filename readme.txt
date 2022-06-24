@@ -1,5 +1,5 @@
 # TimbToweR its a personal proyect to apply the learned (HTML + CSS + JS + React + NodeJS + MongoDB) Additionally the goal its to implement wallets as login.
-# I'am a curious person passionate for tech and audiovisual art, all the code and art on this rep was made from my deepest desire to conect this two passions.
+# I'am a curious person passionate for tech and audiovisual art
 # My personal and professional roadmap goes to the crypto world but i'm open to any proposal if contribute and inspires me.
 # Build a castle it's hard work, but the joy of every minute behind the ideas and creative process it's priceless for me.
 # The core idea it's to make it responsive and have fun in the process, this is my first proyect without courses or anything like that.
