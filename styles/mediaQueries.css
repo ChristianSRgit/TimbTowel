@@ -12,10 +12,11 @@
     #menuHeader > svg { 
         
         height: 100%;
-        width: 100%;
     }
-    #menuHeader{
-       
+    .lineasMenu{
+        max-width: fit-content;
+        max-height: fit-content;
+        margin-top: -10px;
     }
     #dropdown{
         cursor:pointer;
@@ -23,11 +24,15 @@
         align-items: center;
         border-radius: 2%;
     }
+    nav{
+        width: 3.26rem;
+        margin-top: -5%;
+    }
+
     #titleHeader{
         background-color: black;
         color: #fff;
         text-align: center;
-        padding-top: 10px;
         width: 100%;
     }
     #grid{

@@ -1,4 +1,5 @@
-export function testing(a){
+/* export function testing(a){
     console.log(a)
 };
 
+ */
