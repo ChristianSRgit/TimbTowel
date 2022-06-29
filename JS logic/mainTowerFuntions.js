@@ -88,7 +88,7 @@ function Loss(){
 
 
 
-//creo la variable desde afuera para poder asigar
+//creo la variable desde afuera para poder asignar
 let WinnerRound1 = 0;
 let WinnerRound2 = 0;
 let WinnerRound3 = 0;
@@ -123,39 +123,52 @@ function randomGen1(){
     }
 };
 
-function randomGen1Visible(){
-    //fila1.classList.remove("notVisible");let blank1 = document.querySelector(#vacio1);
-    
-
-
-
-};
 
 function randomGen2(){
-        
-            
-            r2_1 = Math.random() * 20 * Math.PI ;
-            r2_1 = Math.round(r2_1);
-            r2_2 = Math.random() * 20 * Math.PI ;
-            r2_2 = Math.round(r2_2);
-            r2_3 = Math.random() * 20 * Math.PI ;
-            r2_3 = Math.round(r2_3);
-       
-    
-            console.log(r2_1,r2_2,r2_3);    
-            //mete los 3 numeros en un array
-         const RowB3Numbers = [r2_1,r2_2,r2_3];
-         //ellige el valor mas alto del array
-         const WinnerRowB = Math.max(...RowB3Numbers);
-    
-         WinnerRound2 = WinnerRowB;
-
-         
-        
+     
+     
+     r2_1 = Math.random() * 20 * Math.PI ;
+     r2_1 = Math.round(r2_1);
+     r2_2 = Math.random() * 20 * Math.PI ;
+     r2_2 = Math.round(r2_2);
+     r2_3 = Math.random() * 20 * Math.PI ;
+     r2_3 = Math.round(r2_3);
+     
+     
+     console.log(r2_1,r2_2,r2_3);    
+     //mete los 3 numeros en un array
+     const RowB3Numbers = [r2_1,r2_2,r2_3];
+     //ellige el valor mas alto del array
+     const WinnerRowB = Math.max(...RowB3Numbers);
+     
+     WinnerRound2 = WinnerRowB;
+     
+     
+     
 };
 
+function randomGen1Visible(){
+    
+};
+     
 function randomGen2Visible(){
-    fila2.classList.remove("notVisible");
+     fila2.classList.remove("notVisible");
+
+    
+};
+
+function randomGen3Visible(){
+     fila3.classList.remove("notVisible");
+     
+};
+
+function randomGen4Visible(){
+     fila4.classList.remove("notVisible");
+     
+};
+
+function randomGen5Visible(){
+     fila5.classList.remove("notVisible");
     
 };
 
@@ -177,14 +190,6 @@ function randomGen3(){
         
              WinnerRound3 = WinnerRowC;
 
-             
-             
-            
-};
-
-function randomGen3Visible(){
-    fila3.classList.remove("notVisible");
-  
 };
 
 function randomGen4(){
@@ -196,7 +201,6 @@ function randomGen4(){
                     r4_3 = Math.random() * 20 * Math.PI ;
                     r4_3 = Math.round(r4_3);
                
-            
                     console.log(r4_1,r4_2,r4_3);    
                     //mete los 3 numeros en un array
                  const RowD3Numbers = [r4_1,r4_2,r4_3];
@@ -204,15 +208,7 @@ function randomGen4(){
                  const WinnerRowD = Math.max(...RowD3Numbers);
             
                  WinnerRound4 = WinnerRowD;
-                
-                 
-             
-                
-};
-
-function randomGen4Visible(){
-    fila4.classList.remove("notVisible");
-    
+                  
 };
 
 function randomGen5(){
@@ -224,30 +220,22 @@ function randomGen5(){
                         r5_3 = Math.random() * 20 * Math.PI ;
                         r5_3 = Math.round(r5_3);
                    
-                
                         console.log(r5_1,r5_2,r5_3);    
                     //mete los 3 numeros en un array
                      const RowE3Numbers = [r5_1,r5_2,r5_3];
                     //ellige el valor mas alto del array
                      const WinnerRowE = Math.max(...RowE3Numbers);
                 
-                     WinnerRound5 = WinnerRowE;
-                     
-                     
+                     WinnerRound5 = WinnerRowE;            
                     
 };
 
-function randomGen5Visible(){
-    fila5.classList.remove("notVisible");
-    
-};
 
 function allrowsNotVisible(){
 fila2.classList.add("notVisible");
 fila3.classList.add("notVisible");
 fila4.classList.add("notVisible");
 fila5.classList.add("notVisible");
-
 };
 
 
@@ -261,7 +249,6 @@ function resetAll(){
                 r1_1.addEventListener("click",EligionR1_1);
                 r1_2.addEventListener("click",EligionR1_2);
                 r1_3.addEventListener("click",EligionR1_3);
- 
 
                 function EligionR1_1(){
                      if(r1_1 >= WinnerRound1){
@@ -467,14 +454,5 @@ function resetAll(){
            alert("¡GANASTE!");
     };
 
-    const toggleMenu = document.querySelector(".menuButton");
-    const dropdown = document.querySelector("#dropdown");
-     toggleMenu.addEventListener("click",Show)
-     
-     function Show(){
-          dropdown.classList.toggle("dropdownActivo")
-          dropdown.classList.toggle("dropdownInactivo")
-
-     }
 
 
