@@ -94,9 +94,7 @@ button{
     border-radius: 5px;
     box-shadow: 0 0 5px ;
 }
-/* #fila5>button{
-    background-color: red;  SELECTOR lastrow color
-} */
+
 #fila5>button{
     box-shadow: 0 0 3px;
 }
@@ -171,7 +169,10 @@ ul li{
 }
 
 .rojo{
-    background-color: red;
+    color: rgb(255,0,0) !important;
+}
+.verde{
+color: rgb(0,128,0) !important;
 }
 
 #Botonera{
@@ -211,16 +212,14 @@ background-color: grey;
 visibility: hidden;
 }
 
-.aprove{
-background-color: green;
-}
 
 .pickeable{
     cursor: pointer;
 }
 
 .disabled{
-    border-color: red;
-    display: block;
+    cursor: not-allowed;
+    pointer-events: none;
+    
 }
 

@@ -15,7 +15,7 @@ const fila5 = document.querySelector("#fila5");
 
 
 //botones
-let r1_1 = document.querySelector("#r1_1");
+ let r1_1 = document.querySelector("#r1_1");
 let r1_2 = document.querySelector("#r1_2");
 let r1_3 = document.querySelector("#r1_3");
 
@@ -68,14 +68,10 @@ const r5_3Wins =  false;
  iniciarApp();
  
 function iniciarApp(){
-    Start = false; 
-    alert("Presiona start para iniciar TimbTowel");
-     fila1.classList.add("notVisible");
-     fila2.classList.add("notVisible");
-     fila3.classList.add("notVisible");
-     fila4.classList.add("notVisible");
-     fila5.classList.add("notVisible");
-};
+    
+     alert("Presiona start para iniciar TimbTowel");
+     resetAll();
+}
  
 /* alt+shift+a  para comentar seleccion*/
 
@@ -83,7 +79,7 @@ function Loss(){
     alert("Loss");
     allrowsNotVisible();
     iniciarApp();
-
+    
 }
 
 
@@ -117,11 +113,11 @@ function randomGen1(){
 
      WinnerRound1 = WinnerRowA;
      fila1.classList.remove("notVisible");//botones no visibles para estructura
-     
+     randomGen1Visible();
      
      
     }
-};
+}
 
 
 function randomGen2(){
@@ -145,32 +141,46 @@ function randomGen2(){
      
      
      
-};
+}
 
 function randomGen1Visible(){
-    
-};
+     let Start = document.querySelector(".randomGen");
+     Start.classList.add("disabled")
+}
      
 function randomGen2Visible(){
      fila2.classList.remove("notVisible");
-
-    
-};
+}
 
 function randomGen3Visible(){
      fila3.classList.remove("notVisible");
-     
-};
+}
 
 function randomGen4Visible(){
      fila4.classList.remove("notVisible");
-     
-};
+}
 
 function randomGen5Visible(){
      fila5.classList.remove("notVisible");
+}
+
+function disableRow1(){
+     fila1.classList.add("disabled");
     
-};
+}
+function disableRow2(){
+     fila2.classList.add("disabled");
+    
+}
+
+function disableRow3(){
+     fila3.classList.add("disabled");
+    
+}
+function disableRow4(){
+     fila4.classList.add("disabled");
+    
+}
 
 function randomGen3(){
 
@@ -190,7 +200,7 @@ function randomGen3(){
         
              WinnerRound3 = WinnerRowC;
 
-};
+}
 
 function randomGen4(){
                     
@@ -209,7 +219,7 @@ function randomGen4(){
             
                  WinnerRound4 = WinnerRowD;
                   
-};
+}
 
 function randomGen5(){
                         
@@ -228,7 +238,7 @@ function randomGen5(){
                 
                      WinnerRound5 = WinnerRowE;            
                     
-};
+}
 
 
 function allrowsNotVisible(){
@@ -236,13 +246,66 @@ fila2.classList.add("notVisible");
 fila3.classList.add("notVisible");
 fila4.classList.add("notVisible");
 fila5.classList.add("notVisible");
-};
+}
 
 
-function resetAll(){
+function resetAll(){     
+     fila1.classList.add("notVisible");
+     fila2.classList.add("notVisible");
+     fila3.classList.add("notVisible");
+     fila4.classList.add("notVisible");
+     fila5.classList.add("notVisible");
+
+     fila1.classList.remove("disabled");
+     fila2.classList.remove("disabled");
+     fila3.classList.remove("disabled");
+     fila4.classList.remove("disabled");
+     fila5.classList.remove("disabled");
+
+     let Start = document.querySelector(".randomGen");
+     Start.classList.remove("disabled");
+
+     let r1_1 = document.querySelector("#r1_1");
+     let r1_2 = document.querySelector("#r1_2");
+     let r1_3 = document.querySelector("#r1_3");
+
+     let r2_1 = document.querySelector("#r2_1");
+     let r2_2 = document.querySelector("#r2_2");
+     let r2_3 = document.querySelector("#r2_3");
+
+     let r3_1 = document.querySelector("#r3_1");
+     let r3_2 = document.querySelector("#r3_2");
+     let r3_3 = document.querySelector("#r3_3");
+
+     let r4_1 = document.querySelector("#r4_1");
+     let r4_2 = document.querySelector("#r4_2");
+     let r4_3 = document.querySelector("#r4_3");
+
+     let r5_1 = document.querySelector("#r5_1");
+     let r5_2 = document.querySelector("#r5_2");
+     let r5_3 = document.querySelector("#r5_3");
+
+     r1_1.classList.remove("rojo","verde");
+     r1_2.classList.remove("rojo","verde");
+     r1_3.classList.remove("rojo","verde");
+
+     r2_1.classList.remove("rojo","verde");
+     r2_2.classList.remove("rojo","verde");
+     r2_3.classList.remove("rojo","verde");
+
+     r3_1.classList.remove("rojo","verde");
+     r3_2.classList.remove("rojo","verde");
+     r3_3.classList.remove("rojo","verde");
+
+     r4_1.classList.remove("rojo","verde");
+     r4_2.classList.remove("rojo","verde");
+     r4_3.classList.remove("rojo","verde");
+
+     r5_1.classList.remove("rojo","verde");
+     r5_2.classList.remove("rojo","verde");
+     r5_3.classList.remove("rojo","verde");
     
-    
-};
+}
 
     Runlvl1();
     function Runlvl1(){    //espero el click en el primer nivel
@@ -255,10 +318,15 @@ function resetAll(){
                         r1_1Wins = true;
                         randomGen2();
                         randomGen2Visible();
-         
+                        disableRow1();
+                              let r1_1 = document.querySelector("#r1_1");
+                              let r1_2 = document.querySelector("#r1_2");
+                              let r1_3 = document.querySelector("#r1_3");
+                              r1_1.classList.add("verde");
+                              r1_2.classList.add("rojo");
+                              r1_3.classList.add("rojo");
                    } else{
                         Loss();
-                        allrowsNotVisible();
                        
                    }
                 }
@@ -268,6 +336,13 @@ function resetAll(){
                           r1_2Wins = true;
                           randomGen2();
                           randomGen2Visible();
+                          disableRow1();
+                                   let r1_2 = document.querySelector("#r1_2");
+                                   let r1_1 = document.querySelector("#r1_1");
+                                   let r1_3 = document.querySelector("#r1_3");
+                                   r1_2.classList.add("verde");
+                                   r1_1.classList.add("rojo");
+                                   r1_3.classList.add("rojo");
                      } else{
                           Loss();
                      }
@@ -278,11 +353,18 @@ function resetAll(){
                         r1_3Wins = true;    
                         randomGen2();
                         randomGen2Visible();
+                        disableRow1();
+                              let r1_3 = document.querySelector("#r1_3");
+                              let r1_2 = document.querySelector("#r1_2");
+                              let r1_1 = document.querySelector("#r1_1");
+                              r1_3.classList.add("verde");
+                              r1_1.classList.add("rojo");
+                              r1_2.classList.add("rojo");
                      } else{
                           Loss();
                      }
                }
-    };
+    }
 
     //arrnca aca el segundo nivel
     Runlvl2();
@@ -299,6 +381,13 @@ function resetAll(){
                   r2_1Wins = true;
                   randomGen3();
                   randomGen3Visible();
+                  disableRow2();
+                        let r2_1 = document.querySelector("#r2_1");
+                        let r2_2 = document.querySelector("#r2_2");
+                        let r2_3 = document.querySelector("#r2_3");
+                        r2_1.classList.add("verde");
+                        r2_2.classList.add("rojo");
+                        r2_3.classList.add("rojo");
                   } else{
                        Loss();
                   }
@@ -309,6 +398,13 @@ function resetAll(){
                    r2_2Wins = true;
                    randomGen3();
                    randomGen3Visible();
+                   disableRow2();
+                         let r2_2 = document.querySelector("#r2_2");
+                         let r2_1 = document.querySelector("#r2_1");
+                         let r2_3 = document.querySelector("#r2_3");
+                         r2_2.classList.add("verde");
+                         r2_1.classList.add("rojo");
+                         r2_3.classList.add("rojo");
                  } else{
                       Loss();
                  }
@@ -319,11 +415,18 @@ function resetAll(){
                  r1_3Wins = true;
                  randomGen3();
                  randomGen3Visible();
+                 disableRow2();
+                         let r2_3 = document.querySelector("#r2_3");
+                         let r2_2 = document.querySelector("#r2_2");
+                         let r2_1 = document.querySelector("#r2_1");
+                         r2_3.classList.add("verde");
+                         r2_1.classList.add("rojo");
+                         r2_2.classList.add("rojo");
                 } else{
                      Loss();
                 }
         }
-    };
+    }
     //arranca aca el tercer nivel
     Runlvl3();
 
@@ -338,7 +441,14 @@ function resetAll(){
              if(r3_1 >= WinnerRound3){
                 r3_1Wins = true;
                 randomGen4();   
-                randomGen4Visible();     
+                randomGen4Visible();
+                disableRow3(); 
+                        let r3_1 = document.querySelector("#r3_1");
+                        let r3_2 = document.querySelector("#r3_2");
+                        let r3_3 = document.querySelector("#r3_3");
+                        r3_1.classList.add("verde");
+                        r3_2.classList.add("rojo");
+                        r3_3.classList.add("rojo");    
            } else{
                 Loss();
            }
@@ -348,7 +458,14 @@ function resetAll(){
              if(r3_2 >= WinnerRound3){
                 r3_2Wins = true;
                 randomGen4();
-                randomGen4Visible();  
+                randomGen4Visible();
+                disableRow3();  
+                         let r3_2 = document.querySelector("#r3_2");
+                         let r3_1 = document.querySelector("#r3_1");
+                         let r3_3 = document.querySelector("#r3_3");
+                         r3_2.classList.add("verde");
+                         r3_1.classList.add("rojo");
+                         r3_3.classList.add("rojo");
            } else{
                 Loss();
            }
@@ -358,12 +475,19 @@ function resetAll(){
              if(r3_3 >= WinnerRound3){
                 r1_3Wins = true;
                 randomGen4();
-                randomGen4Visible();  
+                randomGen4Visible();
+                disableRow3();
+                         let r3_3 = document.querySelector("#r3_3");
+                         let r3_2 = document.querySelector("#r3_2");
+                         let r3_1 = document.querySelector("#r3_1");
+                         r3_3.classList.add("verde");
+                         r3_1.classList.add("rojo");
+                         r3_2.classList.add("rojo");  
            } else{
                 Loss();
            }
          }
-    };
+    }
 
     //arranca aca el cuarto nivel
     Runlvl4();
@@ -379,8 +503,14 @@ function resetAll(){
                  if(r4_1 >= WinnerRound4){
                     r4_1Wins = true;
                     randomGen5(); 
-                    randomGen5Visible();  
-                           
+                    randomGen5Visible();
+                    disableRow4();
+                         let r4_1 = document.querySelector("#r4_1");
+                         let r4_2 = document.querySelector("#r4_2");
+                         let r4_3 = document.querySelector("#r4_3");
+                         r4_1.classList.add("verde");
+                         r4_2.classList.add("rojo");
+                         r4_3.classList.add("rojo");
                } else{
                     Loss();
                }
@@ -390,7 +520,14 @@ function resetAll(){
                   if(r4_2 >= WinnerRound4){
                      r4_2Wins = true;
                      randomGen5();
-                     randomGen5Visible();  
+                     randomGen5Visible();
+                     disableRow4();
+                         let r4_2 = document.querySelector("#r4_2");
+                         let r4_1 = document.querySelector("#r4_1");
+                         let r4_3 = document.querySelector("#r4_3");
+                         r4_2.classList.add("verde");
+                         r4_1.classList.add("rojo");
+                         r4_3.classList.add("rojo");  
                 } else{
                      Loss();
                 }
@@ -400,14 +537,21 @@ function resetAll(){
                   if(r4_3 >= WinnerRound4){
                      r4_3Wins = true;
                      randomGen5();
-                     randomGen5Visible();  
+                     randomGen5Visible();
+                     disableRow4();
+                         let r4_3 = document.querySelector("#r4_3");
+                         let r4_2 = document.querySelector("#r4_2");
+                         let r4_1 = document.querySelector("#r4_1");
+                         r4_3.classList.add("verde");
+                         r4_1.classList.add("rojo");
+                         r4_2.classList.add("rojo");
                 } else{
                      Loss();
                 }
             }
     };
        //aca empieza el 5/ultimo nivel :D
-    Runlvl5();
+    Runlvl5()
 
     function Runlvl5(){
               //espero el click en el ultimo nivel
@@ -448,11 +592,11 @@ function resetAll(){
                         Loss();
                    }
                 }
-    };
+    }
 
     function FinalWinWin(){
            alert("¡GANASTE!");
-    };
+    }
 
 
 
