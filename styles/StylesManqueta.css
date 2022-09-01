@@ -179,7 +179,7 @@ color: rgb(0,128,0) !important;
     background-color: aquamarine;
 }
 
-#topRow{
+.topRow{
     display: block;
     clear: both;
     text-align: center;

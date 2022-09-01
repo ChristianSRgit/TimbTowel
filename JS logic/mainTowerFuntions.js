@@ -1,7 +1,9 @@
-/* import {testing} from "./poolStashFunction"; */
 
 // selecciono los botones con queryselectors, algunos por clase otros por id
 let Start = document.querySelector(".randomGen");
+let userStash = document.querySelector("#personalPool");
+let universalPool = document.querySelector("#universalPool");
+
 
     Start.addEventListener("click",randomGen1); 
 //filas
@@ -10,9 +12,6 @@ const fila2 = document.querySelector("#fila2");
 const fila3 = document.querySelector("#fila3");
 const fila4 = document.querySelector("#fila4");
 const fila5 = document.querySelector("#fila5");
-
-
-
 
 //botones
  let r1_1 = document.querySelector("#r1_1");
@@ -36,7 +35,20 @@ let r5_2 = document.querySelector("#r5_2");
 let r5_3 = document.querySelector("#r5_3");
 
 
-//estaria bueno hacer una matriz fija  con grid para que aunque aparezcan/desaparezcan las filas no modifique la altura ya que queda horrendo
+const UniversalPoolObj = {
+     value: 999,
+     userWon: true,     //if user won value can be change
+     isVerified: true,
+}
+
+const userStashObj = {
+     value: 10,
+     user: 'Roberto',
+     isVerified: true,
+}
+userStash.innerHTML = `$${userStashObj.value}`;
+universalPool.innerHTML = `$${UniversalPoolObj.value}`
+
 
 
 //ganadores de cada nivel
@@ -61,10 +73,8 @@ const r5_1Wins =  false;
 const r5_2Wins =  false;
 const r5_3Wins =  false;
 }
-//inician todas las filas sin ser visibles
 
 
-//aca Empieza
  iniciarApp();
  
 function iniciarApp(){
@@ -73,7 +83,6 @@ function iniciarApp(){
      resetAll();
 }
  
-/* alt+shift+a  para comentar seleccion*/
 
 function Loss(){
     alert("Loss");
@@ -92,7 +101,7 @@ let WinnerRound4 = 0;
 let WinnerRound5 = 0;
 
 
-//Generador de primeros 3 random resultado de un num random x pi x 20 y redondeado
+//it generate 3 random numbers
 function randomGen1(){
     if(Start = true){
         alert("elige uno de los 3, solo hay 1 correcto,si elegis bien, pasas al prox nivel")
@@ -308,7 +317,7 @@ function resetAll(){
 }
 
     Runlvl1();
-    function Runlvl1(){    //espero el click en el primer nivel
+    function Runlvl1(){    //firts level click listener
                 r1_1.addEventListener("click",EligionR1_1);
                 r1_2.addEventListener("click",EligionR1_2);
                 r1_3.addEventListener("click",EligionR1_3);
@@ -366,7 +375,6 @@ function resetAll(){
                }
     }
 
-    //arrnca aca el segundo nivel
     Runlvl2();
 
     function Runlvl2(){
@@ -427,7 +435,6 @@ function resetAll(){
                 }
         }
     }
-    //arranca aca el tercer nivel
     Runlvl3();
 
     function Runlvl3(){
@@ -489,7 +496,6 @@ function resetAll(){
          }
     }
 
-    //arranca aca el cuarto nivel
     Runlvl4();
 
     function Runlvl4(){
@@ -550,7 +556,7 @@ function resetAll(){
                 }
             }
     };
-       //aca empieza el 5/ultimo nivel :D
+       //start last level
     Runlvl5()
 
     function Runlvl5(){
