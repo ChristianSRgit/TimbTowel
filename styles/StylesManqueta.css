@@ -1,5 +1,6 @@
 html{
-    background-color: rgb(109, 179, 109);
+     background-color: rgb(109, 179, 109); 
+    /* background-image: url(/media/wallpaperpixel.jpg) */ ;
     height: 100%;
 }
 body{
@@ -23,12 +24,15 @@ body{
 
 .reload{
     padding-top: 12%;
-
     max-height: 3.75rem;
     max-width: 3rem;
 }
 
-
+.topRow{
+    /* background-image: url(/media/PoolBoard.jpg) */;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -80,20 +84,35 @@ body{
     
 }
 
-#footContent{
-    background-color: gray;
-    height: 20%;
-}
-#FooterCopyRight{
-    background-color: black;
-    color: bisque;
+.howToPlay{
     text-align: center;
-    margin-top: auto;
+    color: #fff;
+    padding-top: 1rem;
+    background-color: #000;
+}
+
+.howToPlay p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
     padding-bottom: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.FooterCopyRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(54, 53, 53);
+    color: bisque;
+    padding-top: 1%;
+    padding-bottom: 0.3%;
 }
 button{
     font-size: 4rem;
-    background-color: #ccc;
+    background-color: #ccc; 
+    /* background-image: url(/media/brickspixelart.png) */;
     width: 100%;
     border: 1px double black;
     border-spacing: 0;
@@ -107,16 +126,25 @@ button{
 .numerosTowel{
     text-align: center;
     font-size: 4rem;
-    background-color: #ccc;
+    /* background-color: #ccc; */
+    
     width: 100%;
     border: 1px double black;
     border-radius: 5px;
 }
-button:hover{
-    background-color: rgb(153, 150, 150);
-    
-    
+.userPool{
+/* background-image: url(/media/stashUser.jpg); */
+background-color: #ccc;
 }
+
+.valueAllx3Buttons:hover{
+    color: #fff;
+}
+
+.randomGen:hover{
+    color: #fff;
+}
+
 #menuHeader>div,div > svg{
     cursor:pointer;
     align-items: center;
@@ -229,3 +257,15 @@ visibility: hidden;
     
 }
 
+
+@keyframes zoomInZoomOut {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }

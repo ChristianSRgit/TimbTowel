@@ -1,9 +1,9 @@
-const toggleMenu = document.querySelector(".menuButton");
-    const dropdown = document.querySelector("#dropdown");
-     toggleMenu.addEventListener("click",Show)
+    const reload = document.querySelector("#reloadBtn");
+     reload.addEventListener("click",refillPools)
      
-     function Show(){
-          dropdown.classList.toggle("dropdownActivo")
-          dropdown.classList.toggle("dropdownInactivo")
-
+     function refillPools(){
+          userStashObj.$ = 10;
+          UniversalPoolObj.$ = 999;
+          userStash.innerHTML = `$${userStashObj.$}`;
+          universalPool.innerHTML = `$${UniversalPoolObj.$}`
      }

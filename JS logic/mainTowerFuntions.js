@@ -36,18 +36,20 @@ let r5_3 = document.querySelector("#r5_3");
 
 
 const UniversalPoolObj = {
-     value: 999,
+     $: 999,
      userWon: true,     //if user won value can be change
      isVerified: true,
 }
 
 const userStashObj = {
-     value: 10,
+     $: 10,
      user: 'Roberto',
      isVerified: true,
 }
-userStash.innerHTML = `$${userStashObj.value}`;
-universalPool.innerHTML = `$${UniversalPoolObj.value}`
+
+
+userStash.innerHTML = `$${userStashObj.$}`;
+universalPool.innerHTML = `$${UniversalPoolObj.$}`
 
 
 
@@ -78,20 +80,26 @@ const r5_3Wins =  false;
  iniciarApp();
  
 function iniciarApp(){
-    
+     allrowsNotVisible();
      alert("Presiona start para iniciar TimbTowel");
      resetAll();
 }
- 
+
+
 
 function Loss(){
     alert("Loss");
     allrowsNotVisible();
     iniciarApp();
+      userStashObj.$ -= 1;
+     userStash.innerHTML = `$${userStashObj.$}`;
+
+
+
+
+
     
 }
-
-
 
 //creo la variable desde afuera para poder asignar
 let WinnerRound1 = 0;
@@ -103,7 +111,7 @@ let WinnerRound5 = 0;
 
 //it generate 3 random numbers
 function randomGen1(){
-    if(Start = true){
+    if(Start = true && userStashObj.$ >=1){
         alert("elige uno de los 3, solo hay 1 correcto,si elegis bien, pasas al prox nivel")
         
         r1_1 = Math.random() * 20 * Math.PI ;
@@ -125,7 +133,10 @@ function randomGen1(){
      randomGen1Visible();
      
      
+    }else{
+          alert("Parece que te quedaste sin creditos, deberias recargar para seguir jugando!")
     }
+    
 }
 
 
@@ -602,6 +613,12 @@ function resetAll(){
 
     function FinalWinWin(){
            alert("¡GANASTE!");
+           let reward = UniversalPoolObj.$ / 2;
+           userStashObj.$ += reward;
+           UniversalPoolObj.$ -= reward;
+           userStash.innerHTML = `$${userStashObj.$}`;
+           universalPool.innerHTML = `$${UniversalPoolObj.$}`
+
     }
 
 
