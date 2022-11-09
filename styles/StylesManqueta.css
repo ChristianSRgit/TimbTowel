@@ -1,6 +1,6 @@
 html{
-     background-color: rgb(109, 179, 109); 
-    /* background-image: url(/media/wallpaperpixel.jpg) */ ;
+     /* background-color: rgb(109, 179, 109);  */
+     background-image: url(/media/wallpaperpixel.jpg)  ;
     height: 100%;
 }
 body{
@@ -29,7 +29,7 @@ body{
 }
 
 .topRow{
-    /* background-image: url(/media/PoolBoard.jpg) */;
+    background-image: url(/media/PoolBoard.jpg) ;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -111,8 +111,8 @@ body{
 }
 button{
     font-size: 4rem;
-    background-color: #ccc; 
-    /* background-image: url(/media/brickspixelart.png) */;
+    /* background-color: #ccc;  */
+    background-image: url(/media/brickspixelart.png) ;
     width: 100%;
     border: 1px double black;
     border-spacing: 0;

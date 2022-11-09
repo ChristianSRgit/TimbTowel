@@ -1,11 +1,11 @@
 
+
+
 // selecciono los botones con queryselectors, algunos por clase otros por id
 let Start = document.querySelector(".randomGen");
 let userStash = document.querySelector("#personalPool");
 let universalPool = document.querySelector("#universalPool");
 
-
-    Start.addEventListener("click",randomGen1); 
 //filas
 const fila1 = document.querySelector("#fila1");
 const fila2 = document.querySelector("#fila2");
@@ -42,11 +42,12 @@ const UniversalPoolObj = {
 }
 
 const userStashObj = {
-     $: 10,
+     $: 2,
      user: 'Roberto',
      isVerified: true,
 }
 
+Start.addEventListener("click",randomGen1); 
 
 userStash.innerHTML = `$${userStashObj.$}`;
 universalPool.innerHTML = `$${UniversalPoolObj.$}`
@@ -92,7 +93,11 @@ function Loss(){
     allrowsNotVisible();
     iniciarApp();
       userStashObj.$ -= 1;
+      UniversalPoolObj.$ += 1;
      userStash.innerHTML = `$${userStashObj.$}`;
+     universalPool.innerHTML = `$${UniversalPoolObj.$}`
+
+     
 
 
 
