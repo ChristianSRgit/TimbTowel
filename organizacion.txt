@@ -1,0 +1,17 @@
+login
+	menu principal	
+			jugar
+			wallet
+				meter plata
+				retirar plata
+			configuracion de perfil
+				cambiar imagen
+				cambiar el mail
+				cambiar la password
+			instrucciones de juego
+			idioma
+				
+
+
+		
+			
