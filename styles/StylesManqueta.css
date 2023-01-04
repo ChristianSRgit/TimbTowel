@@ -1,19 +1,23 @@
-html{
-     /* background-color: rgb(109, 179, 109);  */
-     background-image: url(/media/wallpaperpixel.jpg)  ;
-    height: 100%;
-}
-body{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    min-width: 100%;
-}
 * {
     margin: 0px;
     padding: 0px;
     border: 0px;
   }
+html{
+     /* background-color: rgb(109, 179, 109);  */
+     background-image: url(/media/background.jpg);
+     background-size: contain;
+    height: 100%;
+    width: 100%;
+
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
   
 #logo img{
     max-width: auto;
@@ -30,7 +34,7 @@ body{
 
 .topRow{
     background-image: url(/media/PoolBoard.jpg) ;
-    background-repeat: no-repeat;
+    background-size:cover;
     background-position: center;
 }
 #grid{
@@ -38,6 +42,8 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     clear: both;
+
+ 
 }
 .innerRowGridTowel{
     display: grid;
@@ -47,9 +53,10 @@ body{
 #header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #000;
     text-align: center;
-
+    height: 6rem;
 }
 #logo{
     padding-left: 2rem;
@@ -108,6 +115,7 @@ body{
     color: bisque;
     padding-top: 1%;
     padding-bottom: 0.3%;
+    margin-top: auto;
 }
 button{
     font-size: 4rem;
@@ -124,17 +132,18 @@ button{
     box-shadow: 0 0 3px;
 }
 .numerosTowel{
+    
     text-align: center;
     font-size: 4rem;
     /* background-color: #ccc; */
-    
     width: 100%;
     border: 1px double black;
     border-radius: 5px;
 }
 .userPool{
-/* background-image: url(/media/stashUser.jpg); */
-background-color: #ccc;
+    background-image: url(/media/$$$.png);
+    background-size:cover;
+    background-color: #ccc;
 }
 
 .valueAllx3Buttons:hover{
@@ -167,10 +176,15 @@ background-color: #ccc;
 padding-top: 5px;
 }
 #timbTowel{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
     margin-bottom: 0rem;
     padding-bottom: auto;
     justify-content: center;
     align-content: center;
+    width: 100%;
+    height: 100%;
 }
 .sideTowel{
     
