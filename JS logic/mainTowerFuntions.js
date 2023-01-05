@@ -117,7 +117,7 @@ let WinnerRound5 = 0;
 //it generate 3 random numbers
 function randomGen1(){
     if(Start = true && userStashObj.$ >=1){
-        alert("elige uno de los 3, solo hay 1 correcto,si elegis bien, pasas al prox nivel")
+        alert("Elige una de las 3 opciones, solo hay una correcta, si seleccionas bien, pasas al prox nivel. Al ganar el premio es el 50% del pool total")
         
         r1_1 = Math.random() * 20 * Math.PI ;
         r1_1 = Math.round(r1_1);

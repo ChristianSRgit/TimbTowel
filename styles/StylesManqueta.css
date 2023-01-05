@@ -21,15 +21,15 @@ body{
   
 #logo img{
     max-width: auto;
-    max-height: 3.75rem;
+    max-height: 8rem;
     margin-right: 50%;
     padding-top: 10%;
 }
 
 .reload{
     padding-top: 12%;
-    max-height: 3.75rem;
-    max-width: 3rem;
+    max-height: 4rem;
+    max-width: 4rem;
 }
 
 .topRow{
@@ -142,7 +142,7 @@ button{
 }
 .userPool{
     background-image: url(/media/$$$.png);
-    background-size:cover;
+    background-size:1%;
     background-color: #ccc;
 }
 
