@@ -5,7 +5,7 @@
   }
 html{
      /* background-color: rgb(109, 179, 109);  */
-     background-image: url(/media/background.jpg);
+     background-image: url(../media/background.jpg);
      background-size: contain;
     height: 100%;
     width: 100%;
@@ -33,7 +33,7 @@ body{
 }
 
 .topRow{
-    background-image: url(/media/PoolBoard.jpg) ;
+    background-image: url(../media/PoolBoard.jpg) ;
     background-size:cover;
     background-position: center;
 }
@@ -118,7 +118,7 @@ body{
 button{
     font-size: 4rem;
     /* background-color: #ccc;  */
-    background-image: url(/media/brickspixelart.png) ;
+    background-image: url(../media/brickspixelart.png) ;
     width: 100%;
     border: 1px double black;
     border-spacing: 0;
@@ -139,7 +139,7 @@ button{
     border-radius: 5px;
 }
 .userPool{
-    background-image: url(/media/$$$.png);
+    background-image: url(../media/$$$.png);
     background-size:1%;
     background-color: #ccc;
     filter:brightness(50%);
