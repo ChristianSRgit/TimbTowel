@@ -1,5 +1,5 @@
 # ↓
-# TimbToweR its a personal proyect to apply the learned (HTML + CSS + JS + React + NodeJS + MongoDB) 
+# TimbToweR its a personal proyect to apply the learned (HTML + CSS + JS) 
 # I'am a curious person passionate for tech and audiovisual art
 # My personal and professional roadmap goes to the crypto world but i'm open to any proposal if contribute and inspires me.
 # Build a castle it's hard work, but the joy of every minute behind the ideas and creative process it's priceless for me.
@@ -10,3 +10,4 @@
 # Erase things that not matter and focus on the core idea it's difficult for me at times, but i will make it.
 # Refactoring JS it's gonna be a must for sure, but i think it will improve my logic skills..
  
+https://christiansrgit.github.io/TimbTower/
