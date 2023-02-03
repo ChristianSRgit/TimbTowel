@@ -113,12 +113,12 @@ body{
     color: bisque;
     padding-top: 1%;
     padding-bottom: 0.3%;
-    margin-top: auto;
+    margin-top: 5rem;
 }
 button{
     font-size: 4rem;
     /* background-color: #ccc;  */
-    background-image: url(../media/brickspixelart.png) ;
+    background-image: url(../media/brickspixelart.png);
     width: 100%;
     border: 1px double black;
     border-spacing: 0;
@@ -179,7 +179,6 @@ padding-top: 5px;
     flex-direction: column;
     padding-top: 10vh;
     margin-bottom: 0rem;
-    padding-bottom: auto;
     justify-content: center;
     align-content: center;
     width: 100%;
