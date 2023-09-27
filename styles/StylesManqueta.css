@@ -1,25 +1,31 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-  }
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 html{
-     /* background-color: rgb(109, 179, 109);  */
-     background-image: url(../media/background.jpg);
-     background-size: contain;
-    height: 100%;
-    width: 100%;
+    background-image: url(../media/background.jpg);
 
 }
-body{
+html,body {
+ 
     height: 100%;
-    width: 100%;
+
+}
+
+body {
     display: flex;
     flex-direction: column;
-    min-width: 100%;
+    align-items: center; /* Centra el contenido verticalmente */
+    background-image: url(../media/background.jpg);
+    background-size: cover; /* Cambia a cover para llenar la pantalla */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija la imagen de fondo */
 }
-  
-#logo img{
+
+#logo img {
     max-height: 7rem;
     max-width: auto;
     margin-right: 50%;
@@ -27,7 +33,6 @@ body{
 }
 
 .reload{
-    padding-top: 12%;
     max-height: 4rem;
     max-width: 4rem;
 }
@@ -39,7 +44,8 @@ body{
 }
 #grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: auto;
     clear: both;
 
@@ -51,21 +57,24 @@ body{
 }
 
 #header{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
-    text-align: center;
-    height: 6rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Añade una sombra al encabezado */
 }
 #logo{
-    padding-left: 2rem;
-    font-size: 1rem;
-    color: #fff;
+    max-height: 7rem;
+    margin-right: 1rem;
     
 }
 #menuHeader{
-    padding-right: 2rem;
+    display: flex;
+    align-items: center;
     background-color: black;
     text-align: center;
     color: #fff;
@@ -109,6 +118,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     background-color: rgb(54, 53, 53);
     color: bisque;
     padding-top: 1%;
@@ -268,6 +278,17 @@ visibility: hidden;
     pointer-events: none;
     
 }
+
+/* Estilos para dispositivos móviles (responsive) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambia a una disposición de columna para dispositivos móviles */
+    }
+
+    #titleHeader {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente para dispositivos móviles */
+    }
+
 
 
 @keyframes zoomInZoomOut {
