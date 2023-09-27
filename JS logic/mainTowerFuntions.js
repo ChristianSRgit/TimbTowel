@@ -100,7 +100,13 @@ function iniciarApp(){
 
 
 function Loss(){
-    alert("Loss");
+    swal({
+     title: "Perdiste!",
+     text: "¿Te gustaría probar otra vez?",
+     icon: "warning",
+     button: "OK",
+   });
+    
     allrowsNotVisible();
     iniciarApp();
       userStashObj.$ -= 1;
@@ -156,7 +162,13 @@ function randomGen1(){
      
      
     }else{
-          alert("Parece que te quedaste sin creditos, deberias recargar para seguir jugando!")
+     
+          swal({
+               title: "Parece que te quedaste sin saldo!",
+               text: "Deberias recargar para seguir jugando",
+               icon: "error",
+               button: "OK",
+             });
     }
     
 }
@@ -634,13 +646,18 @@ function resetAll(){
     }
 
     function FinalWinWin(){
-           alert("¡GANASTE!");
+           
            let reward = UniversalPoolObj.$ / 2;
            userStashObj.$ += reward;
            UniversalPoolObj.$ -= reward;
            userStash.innerHTML = `$${userStashObj.$}`;
            universalPool.innerHTML = `$${UniversalPoolObj.$}`
-
+           swal({
+               title: "GANASTE!",
+               text: `Tu saldo ahora es de $${userStashObj.$}!`,
+               icon: "success",
+               button: "OK",
+             });
     }
 
 
