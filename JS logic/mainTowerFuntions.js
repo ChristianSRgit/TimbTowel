@@ -82,7 +82,18 @@ const r5_3Wins =  false;
  
 function iniciarApp(){
      allrowsNotVisible();
-     alert("Presiona start para iniciar TimbTowel");
+
+     document.addEventListener("DOMContentLoaded", function() {
+          // Este código se ejecutará una vez que el DOM haya cargado completamente.
+        
+          swal({
+               title: "Todo en orden!",
+               text: "Presiona START para empezar",
+               icon: "success",
+             });
+
+          
+        });
      resetAll();
 }
 
@@ -117,8 +128,14 @@ let WinnerRound5 = 0;
 //it generate 3 random numbers
 function randomGen1(){
     if(Start = true && userStashObj.$ >=1){
-        alert("Elige una de las 3 opciones, solo hay una correcta, si seleccionas bien, pasas al prox nivel. Al ganar el premio es el 50% del pool total")
         
+        swal({
+          title: "Elige una de las tres opciones. ¡Solo una es correcta!",
+          text: "Si aciertas, avanzarás al siguiente nivel. Si llegas al último nivel, ¡ganarás el 50% del premio total!",
+          icon: "info",
+          button: "OK",
+        });
+
         r1_1 = Math.random() * 20 * Math.PI ;
         r1_1 = Math.round(r1_1);
         r1_2 = Math.random() * 20 * Math.PI ;
